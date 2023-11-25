@@ -58,9 +58,9 @@ app.get('/paymentAmount',(req,res)=>{
 })
 
 
-
+const dburl='mongodb+srv://techboothadmin:vyUnsD0zpdPjVNQd@cluster0.gtllxds.mongodb.net/omitrek?retryWrites=true&w=majority'
 // Connect to MongoDB
-const db=mongoose.connect('mongodb://127.0.0.1:27017/omitrek', {
+const db=mongoose.connect(dburl, {
     useNewUrlParser: true,
     useUnifiedTopology: true
 });
